@@ -1,6 +1,6 @@
 package app9_19;
 
-// app9_19, ±_ª¬Ãþ§O
+// app9_19, å·¢ç‹€é¡žåˆ¥
 
 public class app9_19
 {
