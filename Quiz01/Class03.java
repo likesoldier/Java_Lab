@@ -12,6 +12,8 @@ class Data
 	 /***********使用巢狀類別*******************/
 	 class Test 				//(1)內部類別
 	 {
+		int english;			//(1) 成員
+		int math;
 		 public Test() {
 		 }
 		 
@@ -20,11 +22,10 @@ class Data
 				english=eng;
 				math=m;
 			}
-		int english;			//(1) 成員
-		int math;
+
 		double avg()				//(3) 方法1
 		{
-			return (english+math)/2;
+			return (english+math)/2.;
 			
 		}
 	
@@ -32,9 +33,9 @@ class Data
 
 	void show ()				//(4) 方法2
 	{
-		Test t=new Test();
+		//Test t=new Test();
 		System.out.print("name:"+name);
-		System.out.println(" english="+t.english+" math="+t.math);
+		System.out.println(" english="+data.english+" math="+data.math+" avg="+(double)data.avg());
 		
 	}
 

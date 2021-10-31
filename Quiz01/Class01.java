@@ -4,11 +4,11 @@ class CCal{
 	int width;
 	int height;
 	double pi = 3.1416;
-	void Cal_area(int r) {
+	void Cal_area(int r) {              //¦h¸ü1
 		radius = r;
 		show_b();
 	}
-	void Cal_area(int l, int w, int h) {
+	void Cal_area(int l, int w, int h) {			//¦h¸ü2
 		length = l;
 		width = w;
 		height = h;
