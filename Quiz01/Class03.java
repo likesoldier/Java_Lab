@@ -1,29 +1,29 @@
-/***********²Ä¤TÃD*******************/
+/***********ç¬¬ä¸‰é¡Œ*******************/
 class Data
 {
 	
 	private String name;	
-	private Test score;   // Ãş§O«¬ºA
+	private Test score;   // é¡åˆ¥å‹æ…‹
 	private  Test data ;
-	 public Data(String na , int en, int m ) {				//¥~³¡«Øºc¤¸
+	 public Data(String na , int en, int m ) {				//å¤–éƒ¨å»ºæ§‹å…ƒ
 		 this.name=na;
 		 data=new Test(en, m);
 	 }
-	 /***********¨Ï¥Î±_ª¬Ãş§O*******************/
-	 class Test 				//(1)¤º³¡Ãş§O
+	 /***********ä½¿ç”¨å·¢ç‹€é¡åˆ¥*******************/
+	 class Test 				//(1)å…§éƒ¨é¡åˆ¥
 	 {
-		int english;			//(1) ¦¨­û
+		int english;			//(1) æˆå“¡
 		int math;
 		 public Test() {
 		 }
 		 
-		 public Test (int eng,int m)    // (2) «Øºc¤¸
+		 public Test (int eng,int m)    // (2) å»ºæ§‹å…ƒ
 			{
 				english=eng;
 				math=m;
 			}
 
-		double avg()				//(3) ¤èªk1
+		double avg()				//(3) æ–¹æ³•1
 		{
 			return (english+math)/2.;
 			
@@ -31,7 +31,7 @@ class Data
 	
 	 }
 
-	void show ()				//(4) ¤èªk2
+	void show ()				//(4) æ–¹æ³•2
 	{
 		//Test t=new Test();
 		System.out.print("name:"+name);
@@ -45,7 +45,7 @@ public class Class03 {
 
 	public static void main(String[] args)
 	{
-		Data[] a;			//(5)ª«¥ó°}¦C a
+		Data[] a;			//(5)ç‰©ä»¶é™£åˆ— a
 		a=new Data[2];
 		
 		a[0]=new Data("Annie",85,92);  
@@ -56,7 +56,8 @@ public class Class03 {
 	}
 
 }
-/*name:Annie english=0 math=0
-name:Brian english=0 math=0*/
+/*
+name:Annie english=85 math=92 avg=88.5
+name:Brian english=77 math=56 avg=66.5   */
 
 
