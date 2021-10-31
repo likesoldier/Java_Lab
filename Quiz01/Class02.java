@@ -7,12 +7,12 @@ public class Class02 {
 		Scanner keyin = new Scanner(System.in);  //輸人
 		System.out.print("Input a number:");
 		int n=keyin.nextInt();
-		boolean r=is_prime(n);
+		boolean r=is_prime(n);		//call is_prime()
 		if(r==true) System.out.println(n+"    Yes");
 		else  System.out.println(n+"    No");
 		
 	}
-    public static boolean is_prime(int n){
+    public static boolean is_prime(int n){		//類別函數
     	boolean r=true;
     	for(int i=2;i<n;i++) {
 			if(n% i==0) {
