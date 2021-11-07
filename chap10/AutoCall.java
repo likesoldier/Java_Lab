@@ -1,6 +1,6 @@
-class Circle {        // ¶ê
-  private double x,y; // ¶ê¤ß
-  private double r;   // ¥b®|
+class Circle {        // åœ“
+  private double x,y; // åœ“å¿ƒ
+  private double r;   // åŠå¾‘
 
   public void setCenter(double x,double y) {
     this.x = x;
@@ -11,18 +11,18 @@ class Circle {        // ¶ê
     this.r = r;
   }
 
-  public String toString() {
-    return "¶ê¤ß¡G(" + x + "," + y + "), ¥b®|¡G" + r;
+  public String toString() {        //å°‡æˆå“¡è®Šæ•¸è½‰æˆå­—ä¸²
+    return "åœ“å¿ƒï¼š(" + x + "," + y + "), åŠå¾‘ï¼š" + r;
   }
 
-  Circle() {    // ¥uÅã¥Ü°T®§ªº«Øºc¤èªk
-    System.out.println("...¥¿¦b°õ¦æ Circle() «Øºc¤èªk...");
+  Circle() {    // åªé¡¯ç¤ºè¨Šæ¯çš„å»ºæ§‹æ–¹æ³•
+    System.out.println("...æ­£åœ¨åŸ·è¡Œ Circle() å»ºæ§‹æ–¹æ³•...");
   }
 }
 
-class Cylinder extends Circle { // Ä~©Ó Circle Ãş§O
-  Cylinder() {  // ¥uÅã¥Ü°T®§ªº«Øºc¤èªk
-    System.out.println("...¥¿¦b°õ¦æ Cylinder() «Øºc¤èªk...");
+class Cylinder extends Circle { // ç¹¼æ‰¿ Circle é¡åˆ¥
+  Cylinder() {  // åªé¡¯ç¤ºè¨Šæ¯çš„å»ºæ§‹æ–¹æ³•
+    System.out.println("...æ­£åœ¨åŸ·è¡Œ Cylinder() å»ºæ§‹æ–¹æ³•...");
   }
 }
 
@@ -30,7 +30,7 @@ public class AutoCall {
   public static void main(String[] argv) {
     Cylinder cr = new Cylinder();
 
-    cr.setCenter(3,4);  // ©I¥sÄ~©Ó¦Ó¨Óªº¤èªk
+    cr.setCenter(3,4);  // å‘¼å«ç¹¼æ‰¿è€Œä¾†çš„æ–¹æ³•
     cr.setRadius(5);
     System.out.println(cr.toString());
   }
